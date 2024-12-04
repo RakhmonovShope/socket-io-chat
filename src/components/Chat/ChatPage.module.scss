@@ -1,0 +1,19 @@
+.chatPage {
+  display: flex;
+  height: 100vh;
+}
+
+.chatSection {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-color: #e9f5f5;
+}
+
+.btn {
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 4px;
+  height: fit-content;
+  font-family: "Roboto", sans-serif;
+}

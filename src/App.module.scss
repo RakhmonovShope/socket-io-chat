@@ -1,0 +1,88 @@
+.wrapper {
+  display: flex;
+}
+
+/* Container for the entire page */
+.authContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  font-family: Arial, sans-serif;
+}
+
+/* Card that holds the form */
+.authCard {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Title at the top of the form */
+.authTitle {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Form styles */
+.authForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Individual form groups */
+.formGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.formGroup label {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 0.3rem;
+}
+
+.formGroup input {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.formGroup input:focus {
+  outline: none;
+  border-color: #6e8efb;
+  box-shadow: 0 0 4px rgba(110, 142, 251, 0.5);
+}
+
+/* Submit button */
+.authButton {
+  padding: 0.75rem;
+  background: #6e8efb;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.authButton:hover {
+  background: #5767d8;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 480px) {
+  .authCard {
+    padding: 1.5rem;
+  }
+}

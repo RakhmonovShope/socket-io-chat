@@ -1,0 +1,33 @@
+.chatContent {
+  flex: 1;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  background-color: #d4f0f0;
+
+  .messageList {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    .message {
+      padding: 12px 16px;
+      border-radius: 12px;
+      max-width: 60%;
+      word-wrap: break-word;
+
+      &.sent {
+        background-color: #fff;
+        align-self: flex-end;
+        border: 1px solid #ccc;
+      }
+
+      &.received {
+        background-color: #dcf8c6;
+        align-self: flex-start;
+        border: 1px solid #b2e5c8;
+      }
+    }
+  }
+}
