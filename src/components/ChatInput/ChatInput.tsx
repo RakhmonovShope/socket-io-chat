@@ -1,13 +1,17 @@
 import React, { useState } from "react";
 import styles from "./ChatInput.module.scss";
 
-const ChatInput = ({ onSend }) => {
+interface IProps {
+  onSend: (message: string) => void;
+}
+
+const ChatInput: React.FC<IProps> = ({ onSend }) => {
   const [inputValue, setInputValue] = useState("");
 
   const handleSend = () => {
     if (inputValue.trim() !== "") {
-      onSend(inputValue); // Send the message
-      setInputValue(""); // Clear the input field
+      onSend(inputValue);
+      setInputValue("");
     }
   };
 
