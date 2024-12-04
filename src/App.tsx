@@ -11,8 +11,6 @@ const App = () => {
 
   useEffect(() => {
     http.get("/auth/get-me").then((response) => {
-      console.log("response", response.data);
-
       methods.setIsAuthenticated(true);
       methods.setProfile(response.data);
     });
